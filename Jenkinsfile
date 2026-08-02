@@ -11,7 +11,7 @@ pipeline {
 
         AWS_REGION = 'ap-south-1'
 
-        ACCOUNT_ID = '290993050816'
+        ACCOUNT_ID = '290993050816
 
         REPOSITORY = 'frontend'
 
@@ -60,11 +60,7 @@ pipeline {
             steps {
 
                 sh """
-                    docker buildx build \
-                    --platform linux/amd64 \
-                    -t ${ECR_URI}:${IMAGE_TAG} \
-                    -t ${ECR_URI}:latest \
-                    --push .
+                    docker buildn-t ${REPOSITORY}:${IMAGE_TAG} .
                 """
 
             }
