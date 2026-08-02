@@ -60,7 +60,7 @@ pipeline {
             steps {
 
                 sh """
-                    docker buildn-t ${REPOSITORY}:${IMAGE_TAG} .
+                    docker build-t ${REPOSITORY}:${IMAGE_TAG} .
                 """
 
             }
